@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi primera web</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+  </head>
+  <body>
+    <table style="width: 500px;">
+      |
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Precio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Hola beats</td>
+          <td>Gratis</td>
+        </tr>
+        <tr>
+          <td>Chanchito feliz</td>
+          <td>$19.90</td>
+        </tr>
+        <tr>
+          <td>Chanchito feliz muy feliz</td>
+          <td>$29.90</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <td></td>
+        <td>$49.80</td>
+      </tfoot>
+    </table>
+
+    <ul>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+    </ul>
+
+    <ol>
+      <li value="50">Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+      <li>
+        <ol>
+          <li style="list-style-type: lower-roman">Subelemento 1</li>
+          <li style="list-style-type: decimal-leading-zero">Subelemento 2</li>
+          <li style="list-style-type: decimal-leading-zero">Subelemento 3</li>
+          <li style="list-style-type: decimal-leading-zero">Subelemento 4</li>
+        </ol>
+      </li>
+    </ol>
+
+    <h1>formulario</h1>
+
+    <form action="/formulario" method="post">
+      <label for="nombre">Nombre</label>
+      <input
+        type="text"
+        value="Samuel"
+        id="nombre"
+        name="nombre"
+        placeholder="Chanchito feliz"
+      />
+      <br />
+      <label for="apellido">Apellido</label>
+      <input
+        type="text"
+        value="Cardenas"
+        id="apellido"
+        name="apellido"
+        placeholder="Chanchito triste"
+      />
+      <br />
+      <label for="comentario">Comentario</label>
+      <textarea
+        cols="50"
+        rows="10"
+        name="comentario"
+        id="comentario"
+        placeholder="añade un comentario"
+      >
+este es un valor por defecto</textarea
+      >
+      <br />
+      <input type="submit" name="" id="" />
+      <!-- los siguientes botones son personalizables  -->
+      <button type="button">Tipo boton</button>
+      <button type="reset">Tipo Reset</button>
+      <button type="submit">Tipo Submit</button>
+    </form>
+
+    <h2></h2>
+    <h3></h3>
+    <h4></h4>
+    <h5></h5>
+    <h6></h6>
+    <p>Hola Mundo!</p>
+    <a href=""></a>
+    <img src="" alt="" />
+  </body>
+</html>
