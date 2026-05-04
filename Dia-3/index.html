@@ -1,11 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Formulario</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Sud</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="cajas">
+      <h1>New Visit Registration</h1>
+      <p class="subtitulo">Documentig pastoral care and fellowship visits across the stake</p>
+      <form action="">
+        <div class="caja1">
+          <h2>MEMBER INFORMATION</h2>
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter Member Name"
+          />
+          <label for="address">Address</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Street, City, Postal code"
+          />
+          <label for="number">Phone Number</label>
+          <input
+            type="text"
+            id="number"
+            name="number"
+            placeholder="+1 (555) 000-0000"
+          />
+        </div>
+
+        <div class="caja2">
+          <h2>LOGISTICS</h2>
+          <div class="fila">
+            <div class="campo">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" />
+            </div>
+            <div class="campo">
+              <label for="time">Time</label>
+              <input type="time" id="time" name="time" />
+            </div>
+          </div>
+          <label for="status">Visit Status</label>
+          <select id="status" name="status">
+            <option value="yes">Completed</option>
+            <option value="no">No completed</option>
+          </select>
+          <label for="registrer">Registrer Name</label>
+          <input
+            type="text"
+            id="registrer"
+            name="registrer"
+            placeholder="Full name of registrer"
+          />
+        </div>
+
+        <div class="caja3">
+          <h2>VISIT DETAILS</h2>
+          <label for="comments">Comments & Observations</label>
+          <textarea
+            rows="5"
+            name="comments"
+            id="comments"
+            placeholder="Describe the visit context, needs identifier, or spiritual messages shared..."></textarea>
+        </div>
+
+        <div class="caja4">
+          <div class="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31809.46363705142!2d-74.0818944!3d4.7382528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1777740330560!5m2!1ses!2sco"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            frameborder="0"
+          >
+          </iframe>
+          </div>
+          <button type="submit">Guardar Registro</button>
+          <p>
+            *Information recorded is used for internal congregational support
+            only.
+          </p>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>

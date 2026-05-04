@@ -1,0 +1,155 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarjeta de Perfil</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 40px;
+      margin: 0;
+    }
+
+    .tarjeta {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .cabecera {
+      background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url('https://images.unsplash.com/photo-1557683316-973673baf926');
+      background-size: cover;
+      background-position: center;
+      height: 200px;
+      position: relative;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      background-color: #e0e0e0;
+      border-radius: 50%;
+      position: absolute;
+      bottom: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 5px solid white;
+      background-image: url('https://i.pravatar.cc/120');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .contenido {
+      padding: 70px 30px 30px;
+      text-align: center;
+    }
+
+    .nombre {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #2c3e50;
+      margin: 0 0 5px 0;
+      letter-spacing: 0.5px;
+    }
+
+    .profesion {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #7f8c8d;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 0 0 20px 0;
+    }
+
+    .descripcion {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #555;
+      text-align: justify;
+      margin: 0 0 25px 0;
+    }
+
+    .estadisticas {
+      display: flex;
+      justify-content: space-around;
+      border-top: 1px solid #ecf0f1;
+      padding-top: 20px;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-numero {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #667eea;
+      display: block;
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      color: #95a5a6;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 5px;
+    }
+
+    .boton {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      text-decoration: none;
+      padding: 12px 40px;
+      border-radius: 25px;
+      display: inline-block;
+      margin-top: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 0.85rem;
+      transition: transform 0.3s;
+    }
+
+    .boton:hover {
+      transform: translateY(-2px);
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="tarjeta">
+    <div class="cabecera">
+      <div class="avatar"></div>
+    </div>
+    <div class="contenido">
+      <h2 class="nombre">María González</h2>
+      <p class="profesion">Desarrolladora Frontend</p>
+      <p class="descripcion">
+        Apasionada por crear experiencias web increíbles. Especializada en React, 
+        CSS y diseño de interfaces modernas que cautivan a los usuarios.
+      </p>
+      <div class="estadisticas">
+        <div class="stat">
+          <span class="stat-numero">127</span>
+          <span class="stat-label">Proyectos</span>
+        </div>
+        <div class="stat">
+          <span class="stat-numero">2.5k</span>
+          <span class="stat-label">Seguidores</span>
+        </div>
+        <div class="stat">
+          <span class="stat-numero">48</span>
+          <span class="stat-label">Clientes</span>
+        </div>
+      </div>
+      <a href="#" class="boton">Ver Portafolio</a>
+    </div>
+  </div>
+</body>
+</html>
